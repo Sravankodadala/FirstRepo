@@ -1,0 +1,27 @@
+create table customers (
+customername varchar(20),
+customerid int,
+contact int);
+
+
+insert into customers (customername, customerid, contact) values ('sravan', 2 , 7893);
+
+
+
+Alter table customers add email varchar(20);
+
+
+
+insert into customers (customername, customerid, contact , email) values ('sravan1', 1 , 7893 , '@gmail' );
+
+
+delete from customers where customername = 'sravan';
+
+update customers set customername = 'sravan123',contact = 70122 where customerid = 1;
+
+Alter table customers drop column email;
+select * from customers;
+
+
+
+..
